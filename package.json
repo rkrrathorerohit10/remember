@@ -1,0 +1,20 @@
+{
+  "name": "instagram",
+  "version": "1.0.0",
+  "description": "an Instagram clone",
+  "main": "index.js",
+  "scripts": {
+    "start":"node app.js",
+    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix remember && npm run build --prefix remember"
+  },
+  "author": "RohitRKR",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.3"
+  }
+}
